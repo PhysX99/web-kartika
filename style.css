@@ -1,0 +1,35 @@
+*{box-sizing:border-box}
+:root{color-scheme:dark;--bg:#090b10;--panel:#11151e;--muted:#9ca7b8;--white:#f7f8fb}
+html{min-height:100%;background:var(--bg)}
+body{margin:0;min-height:100vh;font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;color:var(--white);background:radial-gradient(ellipse at 50% 0%,#172235 0%,#0b0e15 43%,#080a0f 100%);overflow-x:hidden}
+.page{position:relative;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:54px 20px 28px;isolation:isolate}
+.glow{position:absolute;width:270px;height:270px;border-radius:50%;filter:blur(95px);opacity:.16;z-index:-1;pointer-events:none}
+.glow-one{background:#e11d48;top:10%;left:-130px}.glow-two{background:#2563eb;right:-140px;bottom:10%}
+.profile{width:min(100%,480px);text-align:center}
+.brand-mark{width:86px;height:86px;margin:0 auto 22px;border:1px solid #ffffff25;border-radius:26px;background:linear-gradient(145deg,#242b39,#10141d);box-shadow:0 15px 50px #0008,inset 0 1px #ffffff20;display:grid;place-items:center;position:relative;transform:rotate(-3deg)}
+.brand-mark span{font-size:29px;font-weight:900;letter-spacing:-3px;transform:rotate(3deg);background:linear-gradient(120deg,#fff,#aab5c7);-webkit-background-clip:text;background-clip:text;color:transparent}
+.brand-mark i{position:absolute;width:10px;height:10px;border-radius:50%;background:#ef3340;right:13px;top:13px;box-shadow:0 0 18px #ef3340}
+.eyebrow{font-size:10px;letter-spacing:4px;font-weight:800;color:#ef5662;margin:0 0 12px}
+h1{font-size:clamp(27px,7vw,38px);line-height:1.08;letter-spacing:-1.8px;margin:0;font-weight:900}
+h1 span{display:block;color:#d7deea}
+.tagline{font-size:10px;letter-spacing:1.45px;color:#aab4c4;font-weight:700;margin:15px 0 0}
+.tagline b{color:#ef4857;padding:0 3px}
+.intro{max-width:350px;margin:20px auto 30px;color:#aab3c1;font-size:13px;line-height:1.8}
+.links{display:grid;gap:13px}
+.link{min-height:76px;display:flex;align-items:center;gap:14px;text-align:left;padding:15px 17px;border:1px solid #ffffff18;border-radius:17px;color:white;text-decoration:none;background:linear-gradient(110deg,#171d28,#11151d);box-shadow:0 8px 25px #0003;transition:transform .2s,border-color .2s,filter .2s}
+.link:hover{transform:translateY(-3px);border-color:#ffffff45;filter:brightness(1.12)}
+.link:focus-visible{outline:3px solid #fff;outline-offset:4px}
+.link-icon{width:43px;height:43px;flex:0 0 43px;border-radius:13px;display:grid;place-items:center}
+.link-icon svg{width:23px;height:23px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.whatsapp .link-icon{background:#123c2c;color:#4ade80}.youtube .link-icon{background:#421c25;color:#ff5361}
+.youtube .link-icon svg{fill:currentColor;stroke:none}.youtube .link-icon .play{fill:#421c25}
+.link strong{display:block;font-size:13px;font-weight:800;letter-spacing:.05px}
+.link small{display:block;margin-top:5px;font-size:10px;color:#a5afbd}
+.arrow{margin-left:auto;color:#9ba6b6;font-size:20px}
+.hint{font-size:10px;color:#788496;margin:19px 0 0}
+footer{margin-top:54px;text-align:center;color:#697487}
+.footer-line{display:block;width:36px;height:2px;border-radius:2px;background:#e33c4d;margin:0 auto 14px}
+footer p{font-size:10px;font-weight:700;letter-spacing:1.5px;margin:0 0 7px;color:#aab3c1}
+footer small{font-size:8px;letter-spacing:2px}
+@media(min-width:700px){.page{padding-top:70px}.profile{width:440px}.intro{font-size:14px}.link{min-height:82px;padding:17px 19px}.link strong{font-size:14px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
